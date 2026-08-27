@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'layout/header.php'; ?>
 
 <section class="form-container">
     <h1>Register</h1>
@@ -27,4 +27,4 @@
     <p>Already have an account? <a href="login.php">Login here</a></p>
 </section>
 
-<?php include 'footer.php'; ?>
+<?php include 'layout/footer.php'; ?>

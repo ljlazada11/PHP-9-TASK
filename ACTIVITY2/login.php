@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'layout/header.php'; ?>
 
 <section class="form-container">
     <h1>Login</h1>
@@ -25,4 +25,4 @@
     </p>
 </section>
 
-<?php include 'footer.php'; ?>
+<?php include 'layout/footer.php'; ?>

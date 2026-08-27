@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'layout/header.php'; ?>
 
 <section class="home">
     <h1>Welcome to My Website</h1>
@@ -10,4 +10,4 @@
     </div>
 </section>
 
-<?php include 'footer.php'; ?>
+<?php include 'layout/footer.php'; ?>
