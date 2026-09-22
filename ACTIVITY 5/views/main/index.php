@@ -2,47 +2,43 @@
 
 <?php print_r(isset($data) ? $data : null);?>
 
-<div class="container mt-3">
-        <form id="frmInsert">
-            <div class="card">
-                <div class="card-header">
-                    Student's Registration Form
-                </div>
+<div class="navbar">
+    <a href="#" class="active">Registration</a>
+    <a href="#">View Data</a>
+</div>
 
-                <div class="card-body">
-            
-                    <div class="mb-3 mt-3">
-                        <label for="fname" class="form-label">First Name:</label>
-                        <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname" required>
-                    </div>
-
-                    <div class="mb-3 mt-3">
-                        <label for="mname" class="form-label">Middle Name:</label>
-                        <input type="text" class="form-control" id="mname" placeholder="Enter Middle Name" name="mname" required>
-                    </div>
-
-                    <div class="mb-3 mt-3">
-                        <label for="lname" class="form-label">Last Name:</label>
-                        <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname" required>
-                    </div>
-
-                    <div class="mb-3 mt-3">
-                        <label for="gender" class="form-label">Gender:</label>
-                        <select class="form-select" name="gender">
-                            <option value="M">Male</option>
-                            <option value="F">Female</option>
-                        </select>
-                    </div>
-                
-                </div>
-
-                <div class="card-footer">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                    <button type="reset" class="btn btn-danger">Cancel</button>
-                </div>
+<div class="form-container">
+    <div class="form-header">Student's Registration Form</div>
+    <div class="form-body">
+        <form method="POST" action="" id="frmInsert">
+            <div class="form-group">
+                <label>First Name:</label>
+                <input type="text" name="first_name" placeholder="Enter First Name">
             </div>
+
+            <div class="form-group">
+                <label>Middle Name:</label>
+                <input type="text" name="middle_name" placeholder="Enter Middle Name">
+            </div>
+
+            <div class="form-group">
+                <label>Last Name:</label>
+                <input type="text" name="last_name" placeholder="Enter Last Name">
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label>
+                <select name="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-submit">Submit</button>
+            <button type="button" class="btn btn-cancel">Cancel</button>
         </form>
     </div>
+</div>
 
 <?php require_once('./views/includes/scripts/mandatory_script.php');?>
 <?php require_once('./views/includes/scripts/main_script.php');?>

@@ -7,6 +7,7 @@
     <title><?php echo SITE_NAME; ?></title>
     <link rel="stylesheet" href="./public/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./public/css/sweetalert2.min.css">
+    <link rel="stylesheet" href="./public/css/style.css">
 </head>
 <body>
 
