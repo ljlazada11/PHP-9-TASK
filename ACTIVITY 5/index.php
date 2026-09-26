@@ -1,13 +1,17 @@
 <?php
 
-require_once('./config/config.php');
-require_once('./helpers/alert_helper.php');
+/**
+ * PHP Output #5 - Faculty Management System
+ * Architecture: Model-View-Controller (MVC)
+ * Entry Point: Front Controller
+ */
 
-// import your Controllers here..
-require_once('./controller/MainController.php');
+require_once __DIR__ . '/controllers/FacultyController.php';
 
-// create an instance for you Controller
-$main = new MainController();
+// Initialize the controller
+$controller = new FacultyController();
 
-require_once('./router.php');
+// Handle the incoming request (GET / POST)
+$controller->handleRequest();
 
+?>
